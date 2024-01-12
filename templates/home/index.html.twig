@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+	<section class="d-flex flex-wrap gap-2">
+		{% for formation in formations %}
+			<div class="card w-25">
+				<div class="card-body">
+					<h5 class="card-title">{{ formation.titre }}</h5>
+					<p class="card-text">{{ formation.resume }}.</p>
+					<a href="#" class="btn btn-primary">Details</a>
+				</div>
+			</div>
+
+		{% endfor %}
+
+	</section>
+
+
+{% endblock %}
